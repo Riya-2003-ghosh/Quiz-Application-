@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">TechSite</div>
+        <div class="menu">
+            <a href="#" onclick="showSection('home')">Home</a>
+            <a href="#" onclick="showSection('contact')">Contact</a>
+            <a href="#" onclick="showSection('about')">About</a>
+            <a href="#" onclick="showSection('work')">Work</a>
+        </div>
+    </div>
+
+    <div class="content home active" id="home">
+        <div class="quiz-container">
+            <div class="progress">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <div class="question-info">
+                <div class="question-number" id="question-number">Question 1/30</div>
+                <div class="question-text" id="question-text">Which algorithm is used for finding the shortest path in a weighted graph with negative edges?</div>
+            </div>
+            <div class="options" id="options">
+                <div class="option" onclick="selectOption(this, 'Dijkstra\'s Algorithm')">
+                    Dijkstra's Algorithm
+                    <div class="checkmark">✔</div>
+                </div>
+                <div class="option" onclick="selectOption(this, 'Bellman-Ford Algorithm')">
+                    Bellman-Ford Algorithm
+                    <div class="checkmark">✔</div>
+                </div>
+                <div class="option" onclick="selectOption(this, 'A* Algorithm')">
+                    A* Algorithm
+                    <div class="checkmark">✔</div>
+                </div>
+                <div class="option" onclick="selectOption(this, 'Floyd-Warshall Algorithm')">
+                    Floyd-Warshall Algorithm
+                    <div class="checkmark">✔</div>
+                </div>
+            </div>
+            <button class="next-btn" id="next-btn" disabled>Next</button>
+        </div>
+    </div>
+
+    <div class="content about" id="about">
+        <div class="about-container">
+            <h1>About Us</h1>
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/022/062/518/small_2x/visualization-of-robot-assistant-or-chat-bot-on-web-site-cute-robot-with-big-eyes-on-dark-background-created-with-generative-ai-photo.jpg" alt="About Us" class="section-image">
+            <p>TechSite is your go-to platform for tech education and quizzes. Launched in 2023, we aim to inspire and educate tech enthusiasts with interactive content. Our team of experts curates challenging questions and resources to help you master technology.</p>
+        </div>
+    </div>
+
+    <div class="content contact" id="contact">
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <img src="https://img.freepik.com/premium-photo/two-robots-talking-each-other-one-which-says-robot_843415-398.jpg" alt="Contact Us" class="section-image">
+            <p>Get in touch with us for support or inquiries!</p>
+            <div class="details">
+                <p>Email: <a href="mailto:support@techsite.com">support@techsite.com</a></p>
+                <p>Phone: <a href="tel:+1800TECHHELP">+1-800-TECH-HELP</a></p>
+                <p>Address: 123 Tech Lane, Silicon Valley, CA 94000</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content work" id="work">
+        <div class="work-container">
+            <h1>Our Work</h1>
+            <img src="https://www.shutterstock.com/image-photo/hands-robot-human-connect-artificial-600nw-2491063591.jpg" alt="Our Work" class="section-image">
+            <p>We create innovative tech solutions, including a 30-question quiz platform, tutorials, and responsive web designs. Stay tuned for our upcoming projects in 2025!</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2025 TechSite. All rights reserved.
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
